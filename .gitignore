@@ -1,4 +1,11 @@
 node_modules
 .DS_store
 insight
+insight_conn.js
+insight_ORM.js
+insight_controller.js
+insight_server.js
+insight.sql
+insight.handlebars
 file_structure.md
+Route_Chart.md 

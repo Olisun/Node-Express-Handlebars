@@ -1,0 +1,14 @@
+INSERT INTO subjects (technology_name) VALUES ('CSS');
+INSERT INTO subjects (technology_name) VALUES ('HTML');
+INSERT INTO subjects (technology_name) VALUES ('JavaScript');
+INSERT INTO subjects (technology_name) VALUES ('Bootstrap');
+INSERT INTO subjects (technology_name) VALUES ('jQuery');
+INSERT INTO subjects (technology_name) VALUES ('node.js');
+INSERT INTO subjects (technology_name) VALUES ('npm');
+INSERT INTO subjects (technology_name) VALUES ('Express');
+INSERT INTO subjects (technology_name) VALUES ('MySQL');
+INSERT INTO subjects (technology_name) VALUES ('React');
+INSERT INTO subjects (technology_name) VALUES ('GitHub');
+INSERT INTO subjects (technology_name) VALUES ('MongoDB');
+INSERT INTO subjects (technology_name) VALUES ('Django');
+INSERT INTO subjects (technology_name) VALUES ('Agile Developement');

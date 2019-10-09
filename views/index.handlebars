@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Full Stack Web Developemenmt Bootcamp</h1>
+  <div>
+    <ul>
+      {{#each subjects}}
+        {{#unless learned}}
+          {{> subjects/subject-block}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div>
+    <ul>
+      {{#each subjects}}
+        {{#if learned}}
+          {{id}}. {{technology_name}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div>
+   <form class="create-form">
+      <div class="form-group">
+        <label for="name"></label>
+        <textarea name="techology-name" id="techology-name" cols="50" rows="2"
+          placeholder="What technology would you like to learn?"></textarea>
+      </div>
+      <button type="submit">Add Technology Subject</button>
+    </form>
+  </div>
+</div>
