@@ -4,7 +4,7 @@
     <ul>
       {{#each subjects}}
         {{#unless learned}}
-          {{> subjects/subject-block}}
+          {{> subject/subject-block}}
         {{/unless}}
       {{/each}}
     </ul>
@@ -24,7 +24,7 @@
    <form class="create-form">
       <div class="form-group">
         <label for="name"></label>
-        <textarea name="techology-name" id="techology-name" cols="50" rows="2"
+        <textarea name="technology-name" id="technology-name" cols="50" rows="2"
           placeholder="What technology would you like to learn?"></textarea>
       </div>
       <button type="submit">Add Technology Subject</button>
