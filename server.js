@@ -10,7 +10,7 @@ var app = express();
 app.use(express.static('public'));
 
 // Setting up body-parser as middle-ware which interprets the data sent to the server.
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Setting Handlebars. 
 var expressHb = require('express-handlebars');

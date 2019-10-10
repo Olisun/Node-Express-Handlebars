@@ -4,6 +4,8 @@ insight
 insight_conn.js
 insight_ORM.js
 insight_controller.js
+insight_models.js
+insight_client.js
 insight_server.js
 insight.sql
 insight.handlebars
