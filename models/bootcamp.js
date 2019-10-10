@@ -17,7 +17,7 @@ var subject = {
 
   update: function(objColVals, condition, cb) {
     orm.update('subjects', objColVals, condition, function(response) {
-      cd(response);
+      cb(response);
     });
   },
 

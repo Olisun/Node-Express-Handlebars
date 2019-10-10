@@ -18,7 +18,7 @@ router.get('/', function(request, response) {
 });
 
 router.post('/api/subjects', function(request, response) {
-  subject.create([request.body.name], function(request) {
+  subject.create([request.body.name], function(result) {
     // Sending back the ID of the new subject. 
     response.json({ id: result.insertId });
   });
