@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 
 // Importing the modal(bgootcamp.js) to use it's database function.
-var subject = require('../models/bootcamp.js');
+var subject = require('../models/subject.js');
 
 // Creating the routes needed for this app and the logic for each route.
 router.get('/', function(request, response) {
