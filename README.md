@@ -1,5 +1,5 @@
-# Friend-Finder
-Node and Express Servers
+# Full Stack Web Devbelopement Lessons
+Node, Express Servers, Handlebars and MySQL
 
 ## App Screen Shot:
 ![](public/assets/images/screen-shot.png)
