@@ -30,6 +30,8 @@ This app lets users input the names of web technologies they would like to learn
 
 ## Stretch Goals:
 
+* To add a button to delete to update the fields. The code I wrote is not working properly. Will seek TA help in the morning.
+
   
 ## Techology Stack:
   * Node.js
@@ -40,14 +42,14 @@ This app lets users input the names of web technologies they would like to learn
   * Heroku
 
 ## Methodology:
-.
+
 My approach to building this app was to closely follow the class activities in Handlebars, Express and MySQL. I used the in-class Cats app assignement as a guideline.
 
 ## Problems That I Overcame:
 
  * Deploying to Heroku was one problem. I got help from Danny, our TA and he helped guide me and he rest of the class through propely setting up the JAWSDB on Heroku and formatting our connections and tables on MySQL.
 
- * I had bugs with adding and updating the lesson topics. It took me a while to get them working. I overcame this by carefully examine the Cats app and I realized that I had the variables used by body parser pointing to the wrong fields in my MySQL database. The code snippets are below.
+ * I had bugs with adding and updating the lesson topics. It took me a while to get them working. I overcame this by carefully examining the Cats app and I realized that I had the variables used by body parser pointing to the wrong fields in my MySQL database. The code snippets are below.
 
 ## Problems Still Facing:
 
@@ -82,7 +84,7 @@ router.put('/api/subject/:id', function(request, response) {
 });
 ```
 
-## File Structure Screen-shot
+## File Structure Screen-Shot
 ![](public/assets/images/screen-shot-2.png)
 
 
