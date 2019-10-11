@@ -1,0 +1,35 @@
+.container {
+  margin-left: 25%;
+  width: 50%;
+}
+
+.container-2 {
+  display: inline-flex;
+}
+
+.subject {
+  width: 375px;
+  margin-left: 10%;
+}
+
+.subject-complete {
+  float: right;
+  width: 375px;
+  margin-left: 10%;
+}
+
+.subject-add {
+  width: 375px;
+  margin-left: 10%;
+}
+
+h1 {
+  margin-left: 10%;
+}
+
+
+/* .clearfix::before {
+  content: " ";
+  display: block;
+  clear: both;
+} */

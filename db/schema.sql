@@ -4,7 +4,7 @@ CREATE DATABASE bootcamp_db;
 
 USE bootcamp_db;
 
-CREATE TABLE subjects
+CREATE TABLE subject
 ( 
   id int NOT NULL AUTO_INCREMENT,
   technology_name varchar(100) NOT NULL,

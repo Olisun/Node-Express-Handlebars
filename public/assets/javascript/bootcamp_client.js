@@ -12,7 +12,7 @@ $(function() {
         technology_name: name
       };
       // Sending the POST request. 
-      $.ajax('/api/subjects', {
+      $.ajax('/api/subject', {
         type: 'POST',
         data: newTech
       }).then(
@@ -27,14 +27,14 @@ $(function() {
   });
 
   // This click function updateds the new technology subject to the list the user entered. 
-  $('.learned').on('click', function(event) {
+  $('.complete').on('click', function(event) {
     var id = $(this).data('id');
     // Updatig the state from the default set in the mysl db when the button is clicked. 
     var newState = {
       learned: true
     };
     // Sending the PUT request. 
-    $.ajax('api/subjects/' + id, {
+    $.ajax('api/subject/' + id, {
       type: 'PUT',
       data: newState
     }).then(
@@ -46,10 +46,10 @@ $(function() {
   });
 
   // This click function removes a technology subject from the list. 
-  $('.remove-subject').on('click', function(event) {
+  $('.delete').on('click', function(event) {
     var id = $(this).data('id');
     // Sending the delete request. 
-    $.ajax('/api/subjects/' + id, {
+    $.ajax('/api/subject/' + id, {
       type: 'DELETE',
     }).then(
       function() {

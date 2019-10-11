@@ -10,14 +10,14 @@ var subject = require('../models/subject.js');
 router.get('/', function(request, response) {
   subject.all(function(data) {
     var hbsObject = {
-      subjects: data
+      subject: data
     };
     console.log(hbsObject);
     response.render('index', hbsObject);
   });
 });
 
-router.post('/api/subjects', function(request, response) {
+router.post('/api/subject', function(request, response) {
   subject.create([
     'technology_name'
   ], [
@@ -29,7 +29,7 @@ router.post('/api/subjects', function(request, response) {
   });
 });
 
-router.put('/api/subjects/:id', function(request, response) {
+router.put('/api/subject/:id', function(request, response) {
   var condition = 'id = ' + request.params.id;
   console.log('Condition: ', condition);
   // If no rows were changed, then the ID does not exist. Show a 404. 
@@ -42,9 +42,9 @@ router.put('/api/subjects/:id', function(request, response) {
   });
 });
 
-router.delete('api/subjects/:id', function(request, response) {
+router.delete('api/subject/:id', function(request, response) {
   var condition = 'id = ' + request.params.id;
-
+  console.log(condition)
   subject.delete(condition, function(result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID does not exist. Show a 404. 
