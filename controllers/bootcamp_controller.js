@@ -18,8 +18,13 @@ router.get('/', function(request, response) {
 });
 
 router.post('/api/subjects', function(request, response) {
-  subject.create([request.body.name], function(result) {
-    // Sending back the ID of the new subject. 
+  subject.create([
+    'technology_name'
+  ], [
+    request.body.technology_name
+  ], function(result) {
+    console.log(request.body.technology_name)
+      // Sending back the ID of the new subject. 
     response.json({ id: result.insertId });
   });
 });

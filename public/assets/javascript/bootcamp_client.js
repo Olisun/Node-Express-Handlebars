@@ -9,7 +9,7 @@ $(function() {
 
     if (name !== '') {
       var newTech = {
-        name: name
+        technology_name: name
       };
       // Sending the POST request. 
       $.ajax('/api/subjects', {
