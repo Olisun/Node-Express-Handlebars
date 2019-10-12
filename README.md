@@ -1,4 +1,4 @@
-# Full Stack Web Devbelopement Lessons
+# Full Stack Web Developement Lessons
 Node, Express Servers, Handlebars and MySQL
 
 ## App Screen Shot:
